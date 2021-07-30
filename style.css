@@ -1,0 +1,500 @@
+:root {
+    --bg:#141E61;
+    --secundario: #2C2E43;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    min-width: 400px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--bg);
+}
+
+header h1 {
+    color: white;
+}
+
+
+hr {
+    margin: 35px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.ancho {
+        width: 100%;
+}
+
+/*MENU*/
+/* .c-t {
+    display: flex;
+    background-color: var(--bg);
+} */
+
+.content-menu {
+    width: 100%;
+    display: flex;
+    background-color:var(--bg) ;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fas.fa-bars {
+    font-size: 26px;
+    padding: 20px;
+    display: none;
+}
+.menu {
+    display: flex;
+}
+
+@media (max-width: 776px) {
+    .content-menu {
+        padding: 10px;
+        justify-content: space-between;
+    } 
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: var(--secundario);
+        z-index: 200;
+        text-align: center;
+        width: 100%;
+        left: 110%;
+        transition: all 0.4s;
+    }
+    .fas.fa-bars {
+        display: block;
+    }
+}
+
+.mostrar {
+    left: 0;
+}
+
+.links-nav {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 17px;
+}
+
+.links-nav:hover {
+    background-color: var(--secundario);
+    color: white;
+    transition: all 0.4s;
+}
+
+
+
+/*MENU*/
+
+/*MARCA DE AGUA*/
+
+.div-watermark {
+    background: var(--bg);
+    position: fixed;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+    padding: 8px;
+    top: 100px;
+    /* border-radius: 0px 20px 10px 0px; */
+    border-radius: 0px 10px 10px 0px;
+    font-size: 15px;
+    padding-right: 12px;
+    z-index: 10;
+    right: 0;
+    /* border: 2px solid white;*/
+}
+
+.watermark {
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+/*MARCA DE AGUA*/
+
+/*PANEL PRINCIPAL*/
+.panel-principal {
+    width: 100%;
+    height: 350px;
+    border-bottom: 1px solid;
+    position: relative;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/330/785/205/equations-math-wallpaper-preview.jpg);
+    background-color: rgba(26, 22, 22, 0.9);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo-panel {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    filter: drop-shadow(2px 2px 9px black);
+}
+/*PANEL PRINCIPAL*/
+
+/*container*/
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+/*container*/
+
+/*INDICE*/
+.indice {
+    /* width: 400px;
+    max-width: 100%;
+    overflow-y: scroll !important;
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    top: 0; */
+    /*background: white; */
+    max-width: 100%;
+    /* max-height: 70%; */
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.indice h3 {
+        /* margin: 20px; */
+        background: var(--bg);
+        width: 100%;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        /* position: sticky;
+        top: 0; */
+}
+
+/*ABRIR INDICE */
+.btn-open1, 
+.btn-open2{
+    width: 100%;
+    background: #EEEEEE;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+    position: sticky;
+    top: 0;
+}
+@media (max-width:768px) {
+    .btn-open1, 
+    .btn-open2 {
+        justify-content: space-evenly;
+    }
+}
+
+.mp {
+        border-top: 1px solid var(--bg);
+}
+
+.lista-1unidad, 
+.lista-2unidad {
+    display: none;
+}
+
+.lineas {
+    margin: 0;
+}
+
+.open {
+    display: block;
+}
+
+.indice a {
+    padding: 10px;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+a:hover {
+    background: #B2B1B9;
+    transition:all 0.4s ;
+}
+
+a li {
+    text-decoration: none;
+    color: black;
+}
+
+/*INDICE*/
+
+/*EJERCICIOS*/
+main {
+    /* width: 100%; */
+}
+
+main h3 {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.t-ejercicios {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    text-decoration: overline;
+}
+
+.content-ejercicios {
+    /* width: 90%;
+    margin: auto;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 80% 2fr; */
+    /*
+    margin: auto;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 2fr;*/
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+
+.content-ejercicios h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+
+main h4 {
+    /* font-size: 24px;
+    margin: 30px 15px; */
+    font-size: 20px;
+    margin: 30px 15px;
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 25px;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .content-ejercicios {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .content-ejercicios img {
+        width: 50%;
+        display: block;
+        margin: 20px auto 0 auto;
+    }
+} */
+
+@media (max-width: 967px) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+    }
+    /* .content-ejercicios h4{
+    font-size: 20px;
+    margin: 30px; */
+    .content-ejercicios {
+        flex-direction: column;
+    }
+    .content-ejercicios p {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+.content-ejercicios p{
+    margin-top: 20px;
+
+}
+
+
+img.img-ejercicios {
+    width: 350px;
+    margin: 15px auto;
+}
+
+@media (max-width:811px ) {
+    img.img-ejercicios {
+        width: 100%;
+    }
+}
+/*EJERCICIOS*/
+
+/*MAPA MENTAL*/
+
+.mindmap {    
+    background-image: url(img/mindmap1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 300px;
+    height: 90px; */
+    max-width: 90%;
+    height: 90px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    position: relative;
+    /* background: rgb(0,0,0, 0.9); */
+    border: 1px solid gray;
+}
+
+.opnminmap {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--bg);
+    padding: 9px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+.imgmindmap {
+    /* position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 300;
+    display: none; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: opacity(0.9);
+    display: none;
+}
+
+
+.content-img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+/*
+
+*/
+
+.img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+
+
+.fas.fa-times {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    text-align: end;
+    padding: 10px;
+    top: 10px;
+    right: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .img {
+        max-width: 100%;
+    }
+    .fas.fa-times {
+        font-size: 30px;
+    }
+}
+
+.abririmg {
+    display: block;
+}
+/*MAPA MENTAL*/
+
+
+/*FOOTER*/
+
+.f {
+    background-color: var(--bg);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.f p {
+    text-align: center;
+    color: white;
+}
+
+
+
+/*FOOTER*/
