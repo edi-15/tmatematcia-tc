@@ -86,3 +86,11 @@ btnimg.addEventListener('click', function(){
 closeimg.addEventListener('click', function(){
     img.classList.toggle('abririmg');
 })
+
+
+
+// if (codigo = "x") {
+//     console.log("Accedido");
+// } else {
+//     alert("Codigo inválido");
+// }
