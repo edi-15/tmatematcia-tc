@@ -498,3 +498,52 @@ img.img-ejercicios {
 
 
 /*FOOTER*/
+
+
+/*DENEGAR*/
+
+#dened {
+    width: 100%;
+    height: 100%;
+    background: var(--secundario);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#dened h3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 50% 0 0;
+}
+
+#dened input[type=text] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+
+
+
+.denegar {
+    display: flex;
+}
+
+.denegar2 {
+    display: none !important;
+}
+/* .habilitar {
+    display: flex;
+} */
+
+/*DENEGAR*/

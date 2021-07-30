@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Edison ALamos | Tareas de matematica</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4099277a03.js" crossorigin="anonymous"></script>
 </head>
@@ -184,6 +188,55 @@
     </div>
 </footer>
 
+<div class="content-dened" id="dened">
+    <h3 class="dened">Codigo de acceso no válido o vacio</h3>
+    <form action="" method="get">
+        <input type="text" name="s" placeholder="Escribir codigo" required>
+    </form>
+</div>
+
 <script src="main.js"></script>
+
+<script>
+function getAllGetParams() {
+    var result = [];
+    var parts = [];
+
+    location.search
+    .substr(1)
+    .split("&")
+    .forEach(function (item) {
+      parts = item.split("=");
+      if(parts[0]!=""){     
+        result.push(parts);
+      }
+    });
+
+    return result;
+  }
+  
+  params = getAllGetParams();
+
+      
+var dened = document.getElementById('dened');
+
+if(dened == null) {
+    window.location.href = "index.html";
+}
+
+
+for(var i in params){      
+// console.log('Parámetro '+params[i][0] +' con valor '+params[i][1]);
+if( params[i][0] === "s" & params[i][1] === "sq3sls") {
+    dened.classList.toggle('denegar2');
+    // alert("Autorizado");
+}
+else {
+    dened.classList.toggle('denegar');
+    //  alert("nooo");
+}
+}
+
+</script>
 </body>
 </html>
