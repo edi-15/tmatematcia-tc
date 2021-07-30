@@ -522,7 +522,13 @@ img.img-ejercicios {
     display: block;
     text-align: center;
     color: white;
-    margin: 50% 0 0;
+    margin: 10% 0 0;
+}
+
+@media (max-width: 768px) {
+    .dened {
+        margin: 50% 0 0 !important;
+    }
 }
 
 #dened input[type=text] {
